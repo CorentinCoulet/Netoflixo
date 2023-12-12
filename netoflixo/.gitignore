@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignorer les fichiers package.json
+package.json
+
+# Ignorer les fichiers package-lock.json
+package-lock.json
+
+# Ignorer le répertoire node_modules
+node_modules/
