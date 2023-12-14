@@ -1,37 +1,37 @@
-# Projet Netoflixo
+# Netoflixo Project
 
-## Objectif
+## Objective
 
-L'objectif de ce projet est de créer une plateforme de films inspirée de Netflix, avec une attention particulière portée à l'authentification des utilisateurs. Les principales fonctionnalités comprennent :
+The objective of this project is to create a movie platform inspired by Netflix, with particular attention to user authentication. The main features include:
 
-- **Partie Front-End** : Une interface utilisateur conviviale comprenant une liste de films, une barre de recherche, et des fonctionnalités avancées telles que l'authentification côté client. Les utilisateurs pourront également accéder à des catégories telles que "Favoris" et "En cours de visionnage".
+- **Front-End** : A user-friendly interface including a list of movies, a search bar, and advanced features such as client-side authentication. Users will also be able to access categories such as "Favorites" and "Currently Watching."
 
-- **Partie Back-End** : Un serveur local utilisant Node.js et Express, qui effectuera des requêtes à une base de données MongoDB pour récupérer les différents films. Une gestion sécurisée de l'authentification côté serveur sera mise en place.
+- **Back-End** : A local server using Node.js and Express, which will make requests to a MongoDB database to retrieve various movies. Secure server-side authentication management will be implemented.
 
-- **Base de données locale** : Regroupant les différents films à afficher sur le site, cette base de données comprendra des informations essentielles telles que des tags de genre, une ID, un nom, une image et un synopsis.
+- **Local Database** : Gathering different movies to be displayed on the site, this database will include essential information such as genre tags, an ID, a name, an image, and a synopsis.
 
-## Languages / Frameworks / Outils
+## Languages / Frameworks / Tools
 
 - **Front-End** : TypeScript, React, Vite, Redux.
   
 - **Back-End** : Node.js, Express, MongoDB.
 
-- **Outils de Conteneurisation** : Docker.
+- **Containerization Tools** : Docker.
 
-## Détails sur l'Authentification
+## Details on Authentication
 
-L'authentification des utilisateurs sera gérée à la fois côté front-end et côté serveur pour garantir un environnement sécurisé. Les principales étapes comprennent :
+User authentication will be managed both on the front-end and back-end to ensure a secure environment. The main steps include:
 
-### Côté Front-End
+### Front-End
 
-- **Barre de Recherche Authentifiée** : Les utilisateurs authentifiés auront accès à une barre de recherche avancée, améliorant l'expérience de navigation.
+- **Authenticated Search Bar** : Authenticated users will have access to an advanced search bar, enhancing the browsing experience.
 
-- **Catégories Personnalisées** : Les utilisateurs pourront marquer des films comme "Favoris" et les catégoriser dans "En cours de visionnage".
+- **Custom Categories** : Users can mark movies as "Favorites" and categorize them as "Currently Watching."
 
-### Côté Back-End
+### Back-End
 
-- **Gestion Sécurisée des Utilisateurs** : Les informations d'authentification seront stockées de manière sécurisée dans la base de données.
+- **Secure User Management** : Authentication information will be securely stored in the database.
 
-- **Contrôle d'Accès** : Les requêtes vers les données sensibles seront protégées pour s'assurer que seuls les utilisateurs authentifiés y ont accès.
+- **Access Control** : Queries to sensitive data will be protected to ensure only authenticated users have access.
 
-- **JWT (JSON Web Tokens)** : Un système de JWT sera mis en place pour gérer les sessions utilisateur, garantissant une authentification sécurisée.
+- **JWT (JSON Web Tokens)** : A JWT system will be implemented to manage user sessions, ensuring secure authentication.
