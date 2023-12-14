@@ -1,9 +1,11 @@
-# FrontEnd
+# Front-End du Projet de Recréation de Netflix
 
-## Tâches à réaliser
+Bienvenue dans le dossier Front-End du projet de recréation de Netflix. Ce projet vise à développer une interface utilisateur inspirée de Netflix en utilisant Vite.js et React.
 
-- Liste de films
-- barre de recherche (titre, personnage, genre)
-- Un menu d'authentification
-- Une catégorie favoris / coup de coeur
-- une catégorie films en cours de visionnage
+## Tâches Front-End à Réaliser
+
+- Une liste de films
+- Une barre de recherche
+- Une anthentification côté client
+- Une catégorie favoris
+- Une catégorie en cours de visionnage
