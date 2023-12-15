@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Netoflixo from '../src/assets/Netflix-logo.png';
@@ -9,37 +9,58 @@ interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => { 
 
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const inputRef = useRef<HTMLElement | null>(null);
+    
+    useEffect(() => {
+        const handleOutsideClick = (event: MouseEvent) => {
+          if (inputRef.current && !inputRef.current.contains(event.target as HTMLElement)) {
+            setIsMenuOpen(false);
+          }
+        };
+    
+        document.addEventListener('mousedown', handleOutsideClick);
+        return () => {
+          document.removeEventListener('mousedown', handleOutsideClick);
+        };
+      }, []);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+    
+
   return (
     <nav className='navbar'>
       <ul>
         <li>
-            <Link to="/">
+            <Link to="/browse">
                 <img src={Netoflixo} alt="logo Netflix" className='netoflixo'/>
             </Link> 
         </li>
         <li>
-            <Link to="/" className='link-navbar'>Accueil</Link>
+            <Link to="/browse" className='link-navbar'>Accueil</Link>
         </li>
         <li>
-            <Link to="/series" className='link-navbar'>Séries</Link>
+            <Link to="/browse/series" className='link-navbar'>Séries</Link>
         </li>
         <li>
-            <Link to="/films" className='link-navbar'>Films</Link>
+            <Link to="/browse/films" className='link-navbar'>Films</Link>
         </li>
         <li>
-            <Link to="/" className='link-navbar'>Nouveautés les plus regardées</Link>  
+            <Link to="/latest" className='link-navbar'>Nouveautés les plus regardées</Link>  
         </li>
         <li>
-            <Link to="/" className='link-navbar'>Ma liste</Link>
+            <Link to="/browse/my-list" className='link-navbar'>Ma liste</Link>
         </li>
         <li>
-            <Link to="/" className='link-navbar'>Explorer par langue</Link>
+            <Link to="/browse/original-audio" className='link-navbar'>Explorer par langue</Link>
         </li>
       </ul>
       <ul>
         <li>
-            <div className='search'>
-                <svg>
+            <div className={`search ${isMenuOpen ? 'open' : ''}`}>
+                <svg onClick={toggleMenu}>
                     <path 
                         fillRule="evenodd" 
                         clipRule="evenodd" 
@@ -51,6 +72,11 @@ const Navbar: React.FC<NavbarProps> = () => {
                         fill="currentColor">
                     </path>
                 </svg>
+                {isMenuOpen && (
+                    <div ref={inputRef as React.MutableRefObject<HTMLDivElement | null>}>
+                    <input type="text" placeholder="Titres, personnes, genres" />
+                    </div>
+                )}
             </div>
         </li>
         <li>Jeunesse</li>
