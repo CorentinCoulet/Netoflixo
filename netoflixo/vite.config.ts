@@ -1,5 +1,15 @@
-import Vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
-export default {
-  plugins: [Vue()],
-};
+export default defineConfig({
+  plugins: [vue()],
+  css: {
+    postcss: './postcss.config.js',
+  },
+  build: {
+    target: 'esnext',
+  },
+  esbuild: {
+    
+  }
+});

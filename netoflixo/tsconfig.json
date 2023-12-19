@@ -26,6 +26,6 @@
   "include": [
     "src",
     "node_modules/@types"
-  ],
+, "src/App.ts", "setupProxy.ts"  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

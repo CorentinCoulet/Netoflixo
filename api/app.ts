@@ -1,9 +1,10 @@
-import express from 'express';
+import express, { Express } from 'express';
 import cors from 'cors';
-const app = express();
 import authMiddleware from './middleware/authMiddleware';
 import loginRoutes from './routes/loginRoutes';
 import registerRoutes from './routes/registerRoutes';
+
+const app: Express = express();
 
 app.use(cors());
 app.use(express.json());

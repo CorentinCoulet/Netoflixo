@@ -1,0 +1,14 @@
+.menu-home div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-home li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.menu-home p {
+    font-size: large;
+    font-weight: bold;
+}

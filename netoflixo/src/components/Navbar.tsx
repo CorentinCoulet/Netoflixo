@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import Netoflixo from '../src/assets/Netflix-logo.png';
-import BlueHead from '../src/assets/blueHead.png';
+import Netoflixo from '../assets/Netflix-logo.png';
+import BlueHead from '../assets/blueHead.png';
 import NotificationIcon from './NotificationIcon';
 
 interface NavbarProps {}
@@ -28,8 +28,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
-    
-
+      
   return (
     <nav className='navbar'>
       <ul>

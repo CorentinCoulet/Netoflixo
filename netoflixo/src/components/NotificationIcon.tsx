@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/NotificationIcon.css';
-import Bell from '../src/assets/bell.png'
+import Bell from '../assets/bell.png'
 
 const NotificationIcon = () => {
   const [notificationCount, setNotificationCount] = useState(3);
