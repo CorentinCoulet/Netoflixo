@@ -3,17 +3,18 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["jsonwebtoken", "react", "vite/dynamic-import"],
+    "module": "ESNext",
+    "types": ["react", "react-dom"],
 
     /* node mode */
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
-    "jsx": "react-jsx",
+    "noEmit": true,
+    "jsx": "react",
     "outDir": "./dist",
 
     /* Linting */
@@ -23,7 +24,8 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "src",
+    "node_modules/@types"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
