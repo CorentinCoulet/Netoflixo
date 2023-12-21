@@ -1,10 +1,10 @@
-import express, { Request, Response } from 'express';
-import bcrypt from 'bcrypt';
-import UserModel from '../models/userModel';
+const express = require('express');
+const bcrypt = require('bcrypt');
+const UserModel = require('../models/userModel');
 
 const router = express.Router();
 
-router.post('/register', async (req: Request, res: Response) => {
+router.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
     const existingUser = await UserModel.findOne({ email });

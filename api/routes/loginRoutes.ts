@@ -1,9 +1,9 @@
-import jwt from 'jsonwebtoken';
-import { Router } from 'express';
-import bcrypt from 'bcrypt';
-import UserModel from '../models/userModel';
+const jwt = require('jsonwebtoken');
+const express = require('express');
+const bcrypt = require('bcrypt');
+const UserModel = require('../models/userModel');
 
-const router = Router();
+const router = express.router();
 
 router.post('/login', async (req, res) => {
   try {
