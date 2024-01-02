@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/Home.css";
 
 const Home: React.FC = () => {
 
@@ -14,26 +13,16 @@ const Home: React.FC = () => {
   };
 
   return (
-    <ul className='menu-home'>
-      <div className='profil-user-started'>
+    <ul className="list-none">
+      <div>
         <p>Reprendre avec le profil de Username</p>
         <div>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} >
               {value.name} ({key})
             </li>
           ))}
         </div>
-      </div>
-      <div>
-        <p>Parce que vous avez regardé Titre</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>  
       </div>
       <div>
         <p>Top 10 des séries aujourd'hui : Pays</p>
@@ -66,16 +55,6 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div>
-        <p>Dramas coréens</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div>
         <p>Ma liste</p>
         <div>
           {Object.entries(videosData).map(([key, value]) => (
@@ -95,16 +74,6 @@ const Home: React.FC = () => {
           ))}
         </div>
       </div>
-      <div>       
-        <p>Notre sélection pour Username</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
       <div>
         <p>Nouveautés</p>
         <div>
@@ -116,27 +85,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div>
-        <p>Séries inspirées de mangas</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div>
         <p>Films d'époque Emotion</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div>
-        <p>Séries surnaturelles à regarder sans modération</p>
         <div>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key}>
@@ -166,27 +115,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div>
-        <p>Séries SF et fantastique</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div>
         <p>Séries</p>
-        <div>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div>
-        <p>Parce que vous avez regardé Titre</p>
         <div>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key}>

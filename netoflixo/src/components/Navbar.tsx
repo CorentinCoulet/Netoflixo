@@ -28,36 +28,42 @@ const Navbar: React.FC<NavbarProps> = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
-      
+
   return (
-    <nav className='navbar'>
-      <ul>
-        <li>
+    <nav className='flex flex-row justify-between h-screen bg-gradiente items-center px-0.5 relative transition duration-400 ease-in-out text-lg'>
+      <ul className='flex flex-row list-none p-0 m-0 items-center justify-center'>
+        <li className='list-none px-3'>
             <Link to="/browse">
-                <img src={Netoflixo} alt="logo Netflix" className='netoflixo'/>
+                <img src={Netoflixo} alt="logo Netflix" className='h-8 w-24'/>
             </Link> 
         </li>
-        <li>
-            <Link to="/browse" className='link-navbar'>Accueil</Link>
+
+        <li className='list-none px-3'>
+            <Link to="/browse" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Accueil</Link>
         </li>
-        <li>
-            <Link to="/browse/series" className='link-navbar'>Séries</Link>
+
+        <li className='list-none px-3'>
+            <Link to="/browse/series" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Séries</Link>
         </li>
-        <li>
-            <Link to="/browse/films" className='link-navbar'>Films</Link>
+
+        <li className='list-none px-3'>
+            <Link to="/browse/films" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Films</Link>
         </li>
-        <li>
-            <Link to="/latest" className='link-navbar'>Nouveautés les plus regardées</Link>  
+
+        <li className='list-none px-3'>
+            <Link to="/latest" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Nouveautés les plus regardées</Link>  
         </li>
-        <li>
-            <Link to="/browse/my-list" className='link-navbar'>Ma liste</Link>
+
+        <li className='list-none px-3'>
+            <Link to="/browse/my-list" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Ma liste</Link>
         </li>
-        <li>
-            <Link to="/browse/original-audio" className='link-navbar'>Explorer par langue</Link>
+
+        <li className='list-none px-3'>
+            <Link to="/browse/original-audio" className='no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Explorer par langue</Link>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul className='flex flex-row list-none p-0 m-0 items-center justify-center'>
+        <li className='list-none px-3'>
             <div className={`search ${isMenuOpen ? 'open' : ''}`}>
                 <svg onClick={toggleMenu}>
                     <path 
@@ -78,17 +84,16 @@ const Navbar: React.FC<NavbarProps> = () => {
                 )}
             </div>
         </li>
-        <li>Jeunesse</li>
-        <li><NotificationIcon /></li>
-        <li>
+        <li className='list-none px-3 no-underline cursor-pointer text-inherit hover:no-underline hover:text-grayHov'>Jeunesse</li>
+        <li className='list-none px-3'><NotificationIcon /></li>
+        <li className='list-none px-3'>
             <a href="/YourAccount">
                 <span className="profile-link" role="presentation">
-                    <img className="profile-icon" 
+                    <img className="w-9 h-9 rounded" 
                         src={BlueHead} alt="profil image">
                     </img>
                 </span>
             </a>
-            <span className="caret" role="presentation"></span>
         </li>
       </ul>
     </nav>

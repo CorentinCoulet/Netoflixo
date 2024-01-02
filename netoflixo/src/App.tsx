@@ -7,13 +7,13 @@ import Films from './components/Films';
 import NewsWatched from './components/NewsWatched';
 import MyList from './components/MyList';
 import OriginalAudio from './components/OriginalAudio';
-import './App.css';
 
 const App: React.FC = () => {
   
   return (
     <Router>
-      <div className='text-sm'>
+      {/*  bg-black text-white */}
+      <div className='text-sm m-0 overflow-hidden '>
         <Navbar />
         <Routes>
           <Route path= "/" element={<Navigate to="/browse" />} />

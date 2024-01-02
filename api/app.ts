@@ -1,9 +1,4 @@
-// import express, { Express } from 'express';
 const express = require('express');
-// import cors from 'cors';
-// import authMiddleware from './middleware/authMiddleware';
-// import loginRoutes from './routes/loginRoutes';
-// import registerRoutes from './routes/registerRoutes';
 const cors = require('cors');
 const authMiddlewares = require('./middleware/authMiddleware.ts');
 const loginRoutes = require('./routes/loginRoutes');

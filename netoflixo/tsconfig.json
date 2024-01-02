@@ -19,7 +19,7 @@
       "noUnusedParameters": true,
       "noFallthroughCasesInSwitch": true
     },
-    "include": ["src", "node_modules/@types", "src/App.ts", "setupProxy.ts"],
+    "include": ["src", "node_modules/@types", "src/App.tsx", "setupProxy.ts"],
     "composite": true
   }
   
