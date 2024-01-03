@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <Router>
       {/*  bg-black  */}
-      <div className='text-sm m-0 overflow-hidden bg-blackNeto text-white max-w-full'>
+      <div className='text-sm m-0 overflow-hidden bg-blackNeto text-white min-h-screen'>
         <Navbar />
         <Routes>
           <Route path= "/" element={<Navigate to="/browse" />} />
