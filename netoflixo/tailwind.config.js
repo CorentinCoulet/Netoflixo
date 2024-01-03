@@ -11,7 +11,8 @@ export default {
         'borderOpen': '1px solid #ccc',
       },
       colors: {
-        'grayHov': 'rgba(202, 199, 199, 0.863)',
+        'grayHov': 'rgba(202, 199, 199, 0.863)', 
+        'blackNeto': '#141414',
       }
     },
   },
