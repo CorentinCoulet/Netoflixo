@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Navbar.css';
 import Netoflixo from '../assets/Netflix-logo.png';
 import BlueHead from '../assets/blueHead.png';
 import NotificationIcon from './NotificationIcon';
@@ -30,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     }
 
   return (
-    <nav className='flex flex-row justify-between h-screen bg-gradiente items-center px-0.5 relative transition duration-400 ease-in-out text-lg'>
+    <nav className='flex flex-row justify-between h-16 bg-gradiente items-center mb-3.5 px-0.5 relative transition duration-400 ease-in-out text-lg'>
       <ul className='flex flex-row list-none p-0 m-0 items-center justify-center'>
         <li className='list-none px-3'>
             <Link to="/browse">
@@ -64,8 +63,8 @@ const Navbar: React.FC<NavbarProps> = () => {
       </ul>
       <ul className='flex flex-row list-none p-0 m-0 items-center justify-center'>
         <li className='list-none px-3'>
-            <div className={`search ${isMenuOpen ? 'open' : ''}`}>
-                <svg onClick={toggleMenu}>
+            <div className={`relative cursor-pointer flex items-center ease-out duration-300 ${isMenuOpen && 'w-52 pr-5 bg-borderOpen'}`}>
+                <svg onClick={toggleMenu} className='w-6 h-6 p-1.5'>
                     <path 
                         fillRule="evenodd" 
                         clipRule="evenodd" 
@@ -79,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 </svg>
                 {isMenuOpen && (
                     <div ref={inputRef as React.MutableRefObject<HTMLDivElement | null>}>
-                    <input type="text" placeholder="Titres, personnes, genres" />
+                    <input type="text" placeholder="Titres, personnes, genres" className={`border-none outline-none bg-transparent text-white ${isMenuOpen && 'w-36 bg-transparent'}`} />
                     </div>
                 )}
             </div>
@@ -88,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <li className='list-none px-3'><NotificationIcon /></li>
         <li className='list-none px-3'>
             <a href="/YourAccount">
-                <span className="profile-link" role="presentation">
+                <span role="presentation">
                     <img className="w-9 h-9 rounded" 
                         src={BlueHead} alt="profil image">
                     </img>
