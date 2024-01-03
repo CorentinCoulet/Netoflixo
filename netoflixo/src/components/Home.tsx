@@ -13,132 +13,132 @@ const Home: React.FC = () => {
   };
 
   return (
-    <ul className="list-none">
-      <div>
-        <p>Reprendre avec le profil de Username</p>
-        <div>
+    <ul className="list-none flex flex-col">
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Reprendre avec le profil de Username</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key} >
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Top 10 des séries aujourd'hui : Pays</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Top 10 des séries aujourd'hui : Pays</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Les plus recherchés</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Les plus recherchés</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Séries Incontournables</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Séries Incontournables</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Ma liste</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Ma liste</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Dramas coréens intemporels</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Dramas coréens intemporels</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Nouveautés</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Nouveautés</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Films d'époque Emotion</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Films d'époque Emotion</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Revoir</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Revoir</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Tendances actuelles</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Tendances actuelles</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Séries</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Séries</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Séries internationales doublées en français</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Séries internationales doublées en français</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}
         </div>
       </div>
-      <div>
-        <p>Séries sur des familles dysfonctionnelles</p>
-        <div>
+      <div className='mb-1.5'>
+        <p className='text-large bold px-5'>Séries sur des familles dysfonctionnelles</p>
+        <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className='px-5 py-2.5'>
               {value.name} ({key})
             </li>
           ))}

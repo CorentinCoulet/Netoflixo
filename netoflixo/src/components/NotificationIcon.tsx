@@ -10,8 +10,8 @@ const NotificationIcon = () => {
   };
 
   return (
-    <div className="notification-icon" onMouseOver={handleMouseOver}>
-        <span className="notification-badge">{notificationCount}</span>
+    <div className="relative inline-block w-6 h-6" onMouseOver={handleMouseOver}>
+        <span className="absolute bottom-2 left-2 bg-red text-white rounded-full py-0.5 px-0.75 text-xs bold flex items-center justify-center min-w-3">{notificationCount}</span>
         <img src={Bell} alt="Notification Icon" />
     </div>
   );
