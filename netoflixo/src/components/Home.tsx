@@ -13,9 +13,9 @@ const Home: React.FC = () => {
   };
 
   return (
-    <ul className="list-none flex flex-col">
+    <ul className="list-none flex flex-col mt-5">
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Reprendre avec le profil de Username</p>
+        <p className='text-xl bold px-5 mb-3'>Top 10 des séries aujourd'hui : France</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Top 10 des séries aujourd'hui : Pays</p>
+        <p className='text-xl bold px-5 mb-3'>Les plus recherchés</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Les plus recherchés</p>
+        <p className='text-xl bold px-5 mb-3'>Séries Incontournables</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Séries Incontournables</p>
+        <p className='text-xl bold px-5 mb-3'>Ma liste</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Ma liste</p>
+        <p className='text-xl bold px-5 mb-3'>Dramas coréens intemporels</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Dramas coréens intemporels</p>
+        <p className='text-xl bold px-5 mb-3'>Nouveautés</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Nouveautés</p>
+        <p className='text-xl bold px-5 mb-3'>Films d'époque Emotion</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Films d'époque Emotion</p>
+        <p className='text-xl bold px-5 mb-3'>Revoir</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Revoir</p>
+        <p className='text-xl bold px-5 mb-3'>Tendances actuelles</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Tendances actuelles</p>
+        <p className='text-xl bold px-5 mb-3'>Séries</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Séries</p>
+        <p className='text-xl bold px-5 mb-3'>Séries internationales doublées en français</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
@@ -125,17 +125,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Séries internationales doublées en français</p>
-        <div className='flex flex-row'>
-          {Object.entries(videosData).map(([key, value]) => (
-            <li key={key} className='px-5 py-2.5'>
-              {value.name} ({key})
-            </li>
-          ))}
-        </div>
-      </div>
-      <div className='mb-1.5'>
-        <p className='text-large bold px-5'>Séries sur des familles dysfonctionnelles</p>
+        <p className='text-xl bold px-5 mb-3'>Séries sur des familles dysfonctionnelles</p>
         <div className='flex flex-row'>
           {Object.entries(videosData).map(([key, value]) => (
             <li key={key} className='px-5 py-2.5'>
